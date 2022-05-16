@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Certificate",
+  "description": "Certificate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "certificate_type_id": {
+      "type": "string",
+      "title": "id of certificate type"
+    },
+    "certificate_name": {
+      "type": "string",
+      "title": "Name of certificate type"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "Name of program"
+    },
+    "certificate_name": {
+      "type": "string",
+      "title": "Name of certificate type"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date certificate was issued by institution"
+    },
+    "awards": {
+      "type": "array",
+      "title": "id(s) for any award credentials, e.g. honors or recognitions bestowed along with certificate",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attachment": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "title": "file for certificate"
+    }
+  },
+  "required": [
+    "id",
+    "certificate_type_id",
+    "certificate_name",
+    "completion_date",
+    "attachment"
+  ],
+  "additionalProperties": false
+}

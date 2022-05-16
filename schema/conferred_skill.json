@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/ConferredSkill",
+  "description": "ConferredSkill",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of conferred skill credential type"
+    },
+    "label": {
+      "type": "string",
+      "title": "Name of conferred skill"
+    }
+  },
+  "required": [
+    "id",
+    "label"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/TransferGrade",
+  "description": "TransferGrade",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "recognition_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date recognized"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    },
+    "gpa": {
+      "type": "number",
+      "title": "GPA issued by institution"
+    },
+    "letter_grade": {
+      "type": "string",
+      "title": "Letter grade issued by institution"
+    }
+  },
+  "required": [
+    "id",
+    "recognition_date",
+    "term",
+    "gpa",
+    "letter_grade"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/CreditRecognition",
+  "description": "CreditRecognition",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "credit_recognition_type_id": {
+      "type": "string",
+      "title": "id type of credit recognition"
+    },
+    "credit_recognition_type_name": {
+      "type": "string",
+      "title": "name of credit recognition type"
+    },
+    "source_institution_id": {
+      "type": "string",
+      "title": "id of original institution"
+    },
+    "source_institution_name": {
+      "type": "string",
+      "title": "name of source institution"
+    },
+    "source_credential_id": {
+      "type": "string",
+      "title": "id of original credential"
+    },
+    "course_source_id": {
+      "type": "string",
+      "title": "id of original course if source was a class_completion credential"
+    },
+    "course_source_name": {
+      "type": "string",
+      "title": "name or id of original course"
+    },
+    "course_equivalency_id": {
+      "type": "string",
+      "title": "id of equivalent course; empty if there is no equivalent course"
+    },
+    "course_equivalency_name": {
+      "type": "string",
+      "title": "name or id of equivalent course"
+    },
+    "recognition_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date recognized"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    },
+    "credit_hours": {
+      "type": "number",
+      "title": "credit recognized"
+    },
+    "grade": {
+      "$ref": "#CONTEXT#/Grade"
+    },
+    "general_ed": {
+      "$ref": "#CONTEXT#/GeneralEd"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "id of any program requirement fulfilled"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "credits recognized toward program requirement"
+    }
+  },
+  "required": [
+    "id",
+    "credit_recognition_type_id",
+    "credit_recognition_type_name",
+    "source_institution_id",
+    "source_institution_name",
+    "source_credential_id",
+    "course_source_id",
+    "recognition_date",
+    "term",
+    "grade"
+  ],
+  "additionalProperties": false
+}

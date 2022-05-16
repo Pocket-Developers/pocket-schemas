@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/LicenseCertification",
+  "description": "LicenseCertification",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "external_license_certification_id": {
+      "type": "string",
+      "title": "External license or certification id"
+    },
+    "license_certification_type_id": {
+      "type": "string",
+      "title": "id of license or certification type"
+    },
+    "license_certification_name": {
+      "type": "string",
+      "title": "Name of the license or certification"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "Program id for certification, if any"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "Name of program"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date license or certification was issued by institution"
+    },
+    "expiration_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date license or certification expires, if any"
+    },
+    "awards": {
+      "type": "array",
+      "title": "id(s) for any award credentials, e.g. honors or recognitions bestowed along with certificate",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collection_id": {
+      "type": "string",
+      "title": "id of collection represented by this license/certificate, if any"
+    },
+    "attachment": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "title": "file for certificate"
+    }
+  },
+  "required": [
+    "id",
+    "external_license_certification_id",
+    "license_certification_name",
+    "license_certification_type_id",
+    "completion_date",
+    "attachment"
+  ],
+  "additionalProperties": false
+}

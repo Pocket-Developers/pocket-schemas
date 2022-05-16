@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Course",
+  "description": "Course",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "course id"
+    },
+    "class_id": {
+      "type": "string",
+      "title": "id of class"
+    },
+    "subject": {
+      "type": "string",
+      "title": "The subject code for the corresponding course"
+    },
+    "number": {
+      "type": "string",
+      "title": "The catalog code for the corresponding course"
+    }
+  },
+  "required": [
+    "id",
+    "award_type_id",
+    "label",
+    "award_date"
+  ],
+  "additionalProperties": false
+}

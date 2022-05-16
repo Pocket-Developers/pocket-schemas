@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Degree",
+  "description": "Degree",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "degree_type_id": {
+      "type": "string",
+      "title": "id of degree type"
+    },
+    "external_degree_id": {
+      "type": "string",
+      "title": "external id of degree"
+    },
+    "degree_name": {
+      "type": "string",
+      "title": "Name of degree type"
+    },
+    "institution_name": {
+      "type": "string",
+      "title": "name of college or school"
+    },
+    "college_name": {
+      "type": "string",
+      "title": "name of college or school"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "program id for degree"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "name of the program"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date degree was issued by institution"
+    },
+    "awards": {
+      "type": "array",
+      "title": "id(s) for any award credentials, e.g. honors or recognitions bestowed along with degree",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attachment": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "title": "file for degree certificate"
+    }
+  },
+  "required": [
+    "id",
+    "degree_type_id",
+    "degree_name",
+    "external_degree_id",
+    "program_name",
+    "program_id",
+    "institution_name",
+    "completion_date",
+    "attachment"
+  ],
+  "additionalProperties": false
+}

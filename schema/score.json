@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Score",
+  "description": "Score",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "assessment": {
+      "$ref": "#CONTEXT#/Assessment"
+    },
+    "score": {
+      "type": "number",
+      "title": "numeric or other score(s) of assessment"
+    },
+    "score_total": {
+      "type": "number",
+      "title": "total possible score"
+    },
+    "certificate_id": {
+      "type": "string",
+      "title": "id of issued certificate, if any"
+    },
+    "certificate_name": {
+      "type": "string",
+      "title": "name of certificate, if any"
+    },
+    "issuing_organization_id": {
+      "type": "string",
+      "title": "id of assessment organization"
+    },
+    "issuing_organization_name": {
+      "type": "string",
+      "title": "name of assessment organization"
+    },
+    "recognized_organization_id": {
+      "type": "array",
+      "title": "id(s) of recognizing organizations",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "assessment",
+    "score",
+    "score_total",
+    "issuing_organization_id",
+    "issuing_organization_name"
+  ],
+  "additionalProperties": false
+}

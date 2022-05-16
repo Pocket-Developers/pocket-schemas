@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Grade",
+  "description": "Grade",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of letter grade issued"
+    },
+    "value": {
+      "type": "number",
+      "title": "numeric value of computed grade"
+    },
+    "label": {
+      "type": "string",
+      "title": "letter grade issued"
+    }
+  },
+  "required": [
+    "id",
+    "value",
+    "label"
+  ],
+  "additionalProperties": false
+}

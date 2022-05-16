@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/FinalGrade",
+  "description": "FinalGrade",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of letter grade issued"
+    },
+    "recognition_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date recognized"
+    },
+    "gpa": {
+      "type": "number",
+      "title": "Final cumulative overall GPA issued by institution"
+    },
+    "letter_grade": {
+      "type": "string",
+      "title": "Final cumulative program letter grade issued by institution"
+    },
+    "program_gpa": {
+      "type": "number",
+      "title": "Final cumulative program GPA issued by institution"
+    },
+    "program_letter_grade": {
+      "type": "string",
+      "title": "Final cumulative program letter grade issued by institution"
+    },
+    "transfer_gpa": {
+      "type": "number",
+      "title": "Final cumulative transfer GPA issued by institution"
+    },
+    "transfer_letter_grade": {
+      "type": "string",
+      "title": "Final cumulative transfer letter grade issued by institution"
+    }
+  },
+  "required": [
+    "id",
+    "gpa",
+    "letter_grade",
+    "program_gpa",
+    "program_letter_grade"
+  ],
+  "additionalProperties": false
+}
