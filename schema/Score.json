@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/Score",
+  "$id": "https://schemas.getpocket.io/schema/Score.json",
   "description": "Score",
   "type": "object",
   "properties": {
@@ -9,7 +9,7 @@
       "title": "id of credential"
     },
     "assessment": {
-      "$ref": "#CONTEXT#/Assessment"
+      "$ref": "https://schemas.getpocket.io/schema/Assessment"
     },
     "score": {
       "type": "number",

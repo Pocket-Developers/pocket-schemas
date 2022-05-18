@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/GeneralEducationFulfillment",
-  "description": "GeneralEducationFulfillment",
+  "$id": "https://schemas.getpocket.io/schema/TransferGrade.json",
+  "description": "TransferGrade",
   "type": "object",
   "properties": {
     "id": {
@@ -14,17 +14,23 @@
       "title": "date recognized"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     },
-    "general_ed": {
-      "$ref": "#CONTEXT#/GeneralEd"
+    "gpa": {
+      "type": "number",
+      "title": "GPA issued by institution"
+    },
+    "letter_grade": {
+      "type": "string",
+      "title": "Letter grade issued by institution"
     }
   },
   "required": [
     "id",
     "recognition_date",
     "term",
-    "general_ed"
+    "gpa",
+    "letter_grade"
   ],
   "additionalProperties": false
 }
