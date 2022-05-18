@@ -1,0 +1,73 @@
+  {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Certificate",
+  "description": "Certificate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "coursework_type_id": {
+      "type": "string",
+      "title": "Type of coursework submitted, e.g. assessment, assignment, project etc."
+    },
+    "coursework_type_name": {
+      "type": "string",
+      "title": "name of coursework type"
+    },
+    "class_id": {
+      "type": "string",
+      "title": "Class coursework was submitted for"
+    },
+    "course": {
+      "$ref": "#CONTEXT#/Course"
+    },
+    "external_assignment_id": {
+      "type": "string",
+      "title": "External id of assignment, from LMS"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name of coursework assignment"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of coursework assignment"
+    },
+    "possible_points": {
+      "type": "number",
+      "title": "Possible points for coursework, if any"
+    },
+    "points": {
+      "type": "number",
+      "title": "Awarded points for coursework, if any"
+    },
+    "refererence_uri": {
+      "type": "string",
+      "format": "url",
+      "title": "uri for any link associated with the coursework; if a file will be copied as a hash as an attachment"
+    },
+    "attachment": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "title": "Attachment associated with the coursework, stored in user's data store"
+    },
+    "class_enrollment_id": {
+      "type": "string",
+      "title": "id of class_enrollment parent credential"
+    }
+  },
+  "required": [
+    "id",
+    "coursework_type_id",
+    "coursework_type_name",
+    "class_id",
+    "course",
+    "external_assignment_id",
+    "name",
+    "description",
+    "class_enrollment_id"
+  ],
+  "additionalProperties": false
+}

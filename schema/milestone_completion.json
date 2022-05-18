@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/MilestoneCompletion",
+  "description": "MilestoneCompletion",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "milestone_id": {
+      "type": "string",
+      "title": "id of milestone associated with completion"
+    },
+    "milestone_name": {
+      "type": "string",
+      "title": "name of milestone type"
+    },
+    "recognition_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date recognized"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    }
+  },
+  "required": [
+    "id",
+    "milestone_id",
+    "milestone_name",
+    "recognition_date",
+    "term"
+  ],
+  "additionalProperties": false
+}

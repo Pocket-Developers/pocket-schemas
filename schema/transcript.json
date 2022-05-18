@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Score",
+  "description": "Score",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "transcript_id": {
+      "type": "string",
+      "title": "external id, if any"
+    },
+    "credential_name": {
+      "type": "string",
+      "title": "name of transcript: \"Official Transcript:\" (institution name)"
+    },
+    "collection_id": {
+      "type": "string",
+      "title": "id of associated credential collection"
+    },
+    "issue_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date transcript was issued by institution"
+    },
+    "institution_name": {
+      "type": "string",
+      "title": "name of college or school"
+    },
+    "attachments": {
+      "type": "array",
+      "title": "file(s) for transcript, e.g. PESC XML, PDF, etc.",
+      "items": {
+        "type": "string",
+        "contentEncoding": "base64"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "transcript_id",
+    "credential_name",
+    "collection_id",
+    "issue_date",
+    "institution_name",
+    "attachments"
+  ],
+  "additionalProperties": false
+}

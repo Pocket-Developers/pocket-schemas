@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/ProgramCompletion",
+  "description": "ProgramCompletion",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "id of program completed"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "program_name"
+    },
+    "recognition_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date recognized"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    }
+  },
+  "required": [
+    "id",
+    "program_id",
+    "program_name",
+    "recognition_date",
+    "term"
+  ],
+  "additionalProperties": false
+}

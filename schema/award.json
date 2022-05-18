@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Award",
+  "description": "Award",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "award_type_id": {
+      "type": "string",
+      "title": "id of award type that contains all the award metadata"
+    },
+    "label": {
+      "type": "string",
+      "title": "Name of award: award_type(name)"
+    },
+    "award_date": {
+      "type": "string",
+      "format": "date",
+      "title": "award date as long"
+    }
+  },
+  "required": [
+    "id",
+    "award_type_id",
+    "label",
+    "award_date"
+  ],
+  "additionalProperties": false
+}

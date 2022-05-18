@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/UserIdentity",
+  "description": "UserIdentity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "email",
+      "title": "Credential Id"
+    },
+    "first_name": {
+      "type": "string",
+      "title": "First name"
+    },
+    "middle_initial": {
+      "type": "string",
+      "title": "Middle initial"
+    },
+    "last_name": {
+      "type": "string",
+      "title": "Last name"
+    },
+    "external_id": {
+      "type": "string",
+      "title": "Institution/organization ID"
+    },
+    "id_picture": {
+      "type": "string",
+      "format": "uri",
+      "title": "Institution/organization ID photo"
+    },
+    "birth_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Birth date on record at institution/organization"
+    },
+    "attachment": {
+      "type": "string",
+      "contentEncoding": "base64",
+      "title": "Any badge or card image or template associated with this user"
+    }
+  },
+  "required": [
+    "id",
+    "first_name",
+    "last_name",
+    "external_id",
+    "birth_date"
+  ],
+  "additionalProperties": false
+}

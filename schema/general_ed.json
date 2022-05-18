@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/GeneralEd",
+  "description": "GeneralEd",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of any general education group requirement met"
+    },
+    "label": {
+      "type": "string",
+      "title": "Abbreviation/code(s) of general education requirement(s) met, from gen ed group name"
+    }
+  },
+  "required": [
+    "id",
+    "label"
+  ],
+  "additionalProperties": false
+}

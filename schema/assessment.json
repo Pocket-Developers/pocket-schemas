@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Assessment",
+  "description": "Assessment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of associated assessment, from institutions recognized assessments table"
+    },
+    "name": {
+      "type": "string",
+      "title": "name of assessment type"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "date of assessment"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "date"
+  ],
+  "additionalProperties": false
+}

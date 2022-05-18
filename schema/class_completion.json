@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/ClassCompletion",
+  "description": "ClassCompletion",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "course": {
+      "$ref": "#CONTEXT#/Course"
+    },
+    "class_id": {
+      "type": "string",
+      "title": "id of enrolled class"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "title": "completion date"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    },
+    "grade": {
+      "$ref": "#CONTEXT#/Grade"
+    },
+    "credits": {
+      "type": "integer",
+      "title": "numeric value of issued credits"
+    },
+    "general_ed": {
+      "$ref": "#CONTEXT#/GeneralEd"
+    },
+    "program_fulfill": {
+      "type": "boolean",
+      "title": "Whether or not class fulfilled a program requirement"
+    },
+    "conferred_skills": {
+      "type": "array",
+      "items": {
+        "$ref": "#CONTEXT#/ConferredSkill"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "course",
+    "class_id",
+    "completion_date",
+    "term",
+    "grade",
+    "credits",
+    "program_fulfill"
+  ],
+  "additionalProperties": false
+}

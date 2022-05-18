@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/Term",
+  "description": "Term",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of term"
+    },
+    "name": {
+      "type": "string",
+      "title": "name of term"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ],
+  "additionalProperties": false
+}

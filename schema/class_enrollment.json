@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "#CONTEXT#/ClassEnrollment",
+  "description": "ClassEnrollment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "course": {
+      "$ref": "#CONTEXT#/Course"
+    },
+    "class_id": {
+      "type": "string",
+      "title": "id of enrolled class"
+    },
+    "enrollment_date": {
+      "type": "string",
+      "format": "date",
+      "title": "enroll date as long (date class begins)"
+    },
+    "term": {
+      "$ref": "#CONTEXT#/Term"
+    },
+    "roster_id": {
+      "type": "string",
+      "title": "id of roster list"
+    }
+  },
+  "required": [
+    "id",
+    "course",
+    "class_id",
+    "enrollment_date",
+    "term"
+  ],
+  "additionalProperties": false
+}
