@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/TermGrade",
-  "description": "TermGrade",
+  "$id": "https://schemas.getpocket.io/schema/GeneralEducationFulfillment.json",
+  "description": "GeneralEducationFulfillment",
   "type": "object",
   "properties": {
     "id": {
@@ -14,23 +14,17 @@
       "title": "date recognized"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     },
-    "gpa": {
-      "type": "number",
-      "title": "Term GPA issued by institution"
-    },
-    "letter_grade": {
-      "type": "string",
-      "title": "Term letter grade issued by institution"
+    "general_ed": {
+      "$ref": "https://schemas.getpocket.io/schema/GeneralEd.json"
     }
   },
   "required": [
     "id",
     "recognition_date",
     "term",
-    "gpa",
-    "letter_grade"
+    "general_ed"
   ],
   "additionalProperties": false
 }

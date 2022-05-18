@@ -1,20 +1,20 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/ProgramCompletion",
-  "description": "ProgramCompletion",
+  "$id": "https://schemas.getpocket.io/schema/MilestoneCompletion.json",
+  "description": "MilestoneCompletion",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "title": "id of credential"
     },
-    "program_id": {
+    "milestone_id": {
       "type": "string",
-      "title": "id of program completed"
+      "title": "id of milestone associated with completion"
     },
-    "program_name": {
+    "milestone_name": {
       "type": "string",
-      "title": "program_name"
+      "title": "name of milestone type"
     },
     "recognition_date": {
       "type": "string",
@@ -22,13 +22,13 @@
       "title": "date recognized"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     }
   },
   "required": [
     "id",
-    "program_id",
-    "program_name",
+    "milestone_id",
+    "milestone_name",
     "recognition_date",
     "term"
   ],

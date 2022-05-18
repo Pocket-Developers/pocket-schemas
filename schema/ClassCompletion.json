@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/ClassCompletion",
+  "$id": "https://schemas.getpocket.io/schema/ClassCompletion.json",
   "description": "ClassCompletion",
   "type": "object",
   "properties": {
@@ -9,7 +9,7 @@
       "title": "id of credential"
     },
     "course": {
-      "$ref": "#CONTEXT#/Course"
+      "$ref": "https://schemas.getpocket.io/schema/Course.json"
     },
     "class_id": {
       "type": "string",
@@ -21,17 +21,17 @@
       "title": "completion date"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     },
     "grade": {
-      "$ref": "#CONTEXT#/Grade"
+      "$ref": "https://schemas.getpocket.io/schema/Grade.json"
     },
     "credits": {
       "type": "integer",
       "title": "numeric value of issued credits"
     },
     "general_ed": {
-      "$ref": "#CONTEXT#/GeneralEd"
+      "$ref": "https://schemas.getpocket.io/schema/GeneralEd.json"
     },
     "program_fulfill": {
       "type": "boolean",
@@ -40,7 +40,7 @@
     "conferred_skills": {
       "type": "array",
       "items": {
-        "$ref": "#CONTEXT#/ConferredSkill"
+        "$ref": "https://schemas.getpocket.io/schema/ConferredSkill.json"
       }
     }
   },

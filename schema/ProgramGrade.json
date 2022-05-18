@@ -1,12 +1,20 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/TransferGrade",
-  "description": "TransferGrade",
+  "$id": "https://schemas.getpocket.io/schema/ProgramGrade.json",
+  "description": "ProgramGrade",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "title": "id of credential"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "id of program completed"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "program_name"
     },
     "recognition_date": {
       "type": "string",
@@ -14,7 +22,7 @@
       "title": "date recognized"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     },
     "gpa": {
       "type": "number",
@@ -27,6 +35,8 @@
   },
   "required": [
     "id",
+    "program_id",
+    "program_name",
     "recognition_date",
     "term",
     "gpa",

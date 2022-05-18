@@ -1,6 +1,6 @@
   {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/Certificate",
+  "$id": "https://schemas.getpocket.io/schema/Coursework.json",
   "description": "Certificate",
   "type": "object",
   "properties": {
@@ -21,7 +21,7 @@
       "title": "Class coursework was submitted for"
     },
     "course": {
-      "$ref": "#CONTEXT#/Course"
+      "$ref": "https://schemas.getpocket.io/schema/Course.json"
     },
     "external_assignment_id": {
       "type": "string",

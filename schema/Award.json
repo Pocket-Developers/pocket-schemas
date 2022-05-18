@@ -1,16 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/Badge",
-  "description": "Badge",
+  "$id": "https://schemas.getpocket.io/schema/Award.json",
+  "description": "Award",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "title": "id of credential"
     },
-    "badge_type_id": {
+    "award_type_id": {
       "type": "string",
-      "title": "id of badge type that contains all the badge metadata"
+      "title": "id of award type that contains all the award metadata"
     },
     "label": {
       "type": "string",

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "#CONTEXT#/ClassIncomplete",
-  "description": "ClassIncomplete",
+  "$id": "https://schemas.getpocket.io/schema/ClassEnrollment.json",
+  "description": "ClassEnrollment",
   "type": "object",
   "properties": {
     "id": {
@@ -9,31 +9,31 @@
       "title": "id of credential"
     },
     "course": {
-      "$ref": "#CONTEXT#/Course"
+      "$ref": "https://schemas.getpocket.io/schema/Course.json"
     },
     "class_id": {
       "type": "string",
       "title": "id of enrolled class"
     },
-    "incomplete_date": {
+    "enrollment_date": {
       "type": "string",
       "format": "date",
-      "title": "incomplete date"
+      "title": "enroll date as long (date class begins)"
     },
     "term": {
-      "$ref": "#CONTEXT#/Term"
+      "$ref": "https://schemas.getpocket.io/schema/Term.json"
     },
-    "grade": {
-      "$ref": "#CONTEXT#/Grade"
+    "roster_id": {
+      "type": "string",
+      "title": "id of roster list"
     }
   },
   "required": [
     "id",
     "course",
     "class_id",
-    "incomplete_date",
-    "term",
-    "grade"
+    "enrollment_date",
+    "term"
   ],
   "additionalProperties": false
 }
