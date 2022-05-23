@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/ProgramAffiliation.json",
+  "description": "ProgramAffiliation",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential Id"
+    },
+    "program_id": {
+      "type": "string",
+      "title": "id of the program"
+    },
+    "program_name": {
+      "type": "string",
+      "title": "Name of program"
+    },
+    "program_external_id": {
+      "type": "string",
+      "title": "External code for the program"
+    },
+    "program_type_name": {
+      "type": "string",
+      "title": "Name of program type"
+    },
+    "parent_id": {
+      "type": "string",
+      "title": "id of parent organization"
+    },
+    "parent_name": {
+      "type": "string",
+      "title": "Name of parent organization, if any"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date program was declared / assigned"
+    }
+  },
+  "required": [
+    "id",
+    "program_id",
+    "program_name",
+    "program_type_name",
+    "date"
+  ],
+  "additionalProperties": false
+}
