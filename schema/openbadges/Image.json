@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/openbadges/Image.json",
+  "description": "Image",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "URI",
+      "title": "The URI or Data URI of the image.\t"
+    },
+    "caption": {
+      "type": "string",
+      "title": "The caption for the image."
+    },
+  },
+  "required": [
+    "id"
+  ],
+  "additionalProperties": false
+}

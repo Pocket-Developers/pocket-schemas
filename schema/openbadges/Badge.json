@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/openbadges/Badge.json",
+  "description": "Badge",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of credential"
+    },
+    "achievementType": {
+      "type": "string",
+      "title": "achievementType for badge it needs to be `Badge`"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name of award: award_type(name)"
+    }
+  },
+  "required": [
+    "id",
+    "achievementType",
+    "name"
+  ],
+  "additionalProperties": false
+}
