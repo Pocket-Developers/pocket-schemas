@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/openbadges/AchievementSubject.json",
+  "description": "AchievementSubject",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "URI",
+      "title": "The URI or Data URI of the Achievement.\t"
+    },
+    "type": {
+      "type": "string",
+      "title": "The value of the type property MUST be an unordered set. One of the items MUST be the IRI 'AchievementSubject'."
+    },
+    "achievementType": {
+      "type": "string",
+      "title": "The type of achievement. This is an extensible vocabulary.",
+      "enum": [
+        "Badge",
+        "Competency"
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "achievementType"
+  ],
+  "additionalProperties": false
+}
