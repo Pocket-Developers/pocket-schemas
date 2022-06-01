@@ -4,10 +4,6 @@
   "description": "UserIdentity",
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string",
-      "title": "Credential Id"
-    },
     "first_name": {
       "type": "string",
       "title": "First name"
