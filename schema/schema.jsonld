@@ -1,0 +1,129 @@
+{
+  "@context": {
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "pocket": "https://pocket.org/"
+  },
+  "@graph": [
+    {
+      "@id": "pocket:Course",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A course.",
+      "rdfs:label": "Course"
+    },
+    {
+      "@id": "pocket:subject",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The subject code for the corresponding course.",
+      "rdfs:label": "subject",
+      "schema:domainIncludes": {
+        "@id": "pocket:Course"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "pocket:course_number",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The catalog code for the corresponding course.",
+      "rdfs:label": "course_number",
+      "schema:domainIncludes": {
+        "@id": "pocket:Course"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "pocket:ClassCompletion",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A ClassCompletion.",
+      "rdfs:label": "ClassCompletion"
+    },
+    {
+      "@id": "pocket:class_id",
+      "@type": "rdf:Property",
+      "rdfs:comment": "class id.",
+      "rdfs:label": "class_id",
+      "schema:domainIncludes": {
+        "@id": "pocket:ClassCompletion"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+      {
+      "@id": "pocket:course",
+      "@type": "rdf:Property",
+      "rdfs:comment": "class id.",
+      "rdfs:label": "class_id",
+      "schema:domainIncludes": {
+        "@id": "pocket:ClassCompletion"
+      },
+      "schema:rangeIncludes": {
+        "@id": "pocket:Course"
+      }
+    },
+     {
+      "@id": "pocket:completion_date",
+      "@type": "rdf:Property",
+      "rdfs:comment": "completion date",
+      "rdfs:label": "completion_date",
+      "schema:domainIncludes": {
+        "@id": "pocket:ClassCompletion"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Date"
+      }
+    },
+      {
+      "@id": "pocket:credits",
+      "@type": "rdf:Property",
+      "rdfs:comment": "numeric value of issued credits",
+      "rdfs:label": "credits",
+      "schema:domainIncludes": {
+        "@id": "pocket:ClassCompletion"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Integer"
+      }
+    },
+    {
+      "@id": "pocket:program_fulfill",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Whether or not class fulfilled a program requirement",
+      "rdfs:label": "program_fulfill",
+      "schema:domainIncludes": {
+        "@id": "pocket:ClassCompletion"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Boolean"
+      }
+    }
+  ]
+}
