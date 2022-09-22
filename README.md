@@ -32,3 +32,6 @@ This repository contains Pocket's JSON-LD schemas. Below is a partial index of t
 * [Transcript](./schema/Transcript.json)
 * [TransferGrade](./schema/TransferGrade.json)
 * [UserIdentity](./schema/UserIdentity.json)
+* [Skill](./schema/Skill.json)
+* [Organization](./schema/Organization.json)
+* [Experience](./schema/Experience.json)

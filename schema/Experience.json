@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Experience.json",
+  "description": "Experience Credential",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the experience credential"
+    },
+    "experience_type_id": {
+      "type": "string",
+      "title": "id of experience type that contains all experience metadata"
+    },
+    "experience_name": {
+      "type": "string",
+      "title": "Name of the experience"
+    },
+    "experience_description": {
+      "type": "string",
+      "title": "Description of the experience"
+    },
+    "experience_org_id": {
+      "type": "string",
+      "title": "ID of the organization issuing the experience credential"
+    },
+    "experience_org_name": {
+      "type": "string",
+      "title": "Name of the organization issuing the experience credential"
+    },
+    "experience_org_logo": {
+      "type": "string",
+      "title": "Logo of the organization"
+    },
+    "experience_category_id": {
+      "type": "string",
+      "title": "ID of the category of the experience"
+    },
+    "experience_category": {
+      "type": "string",
+      "title": "Category of the experience based on the EL taxonomy"
+    },
+    "experience_subcategory_id": {
+      "type": "string",
+      "title": "ID of the subcategory of the experience"
+    },
+    "experience_subcategory": {
+      "type": "string",
+      "title": "Subcategory of the experience"
+    },
+    "experience_date": {
+      "type": "string",
+      "format": "date",
+      "title": "The date of the experience's issuance"
+    },
+    "experience_external_link": {
+      "type": "string",
+      "format": "uri",
+      "title": "URI to any external issuer's digital version of the experience"
+    },
+    "experience_hours": {
+      "type": "number",
+      "title": "Average number of hours per week for the experience"
+    },
+    "experience_start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date when the experience started"
+    },
+    "experience_end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date when the experience ended"
+    },
+    "experience_credit": {
+      "type": "boolean",
+      "title": "Whether the experience is for credit or not"
+    },
+    "image": {
+      "type": "string",
+      "format": "uri",
+      "title": "URI for the experience image"
+    },
+    "attachment": {
+      "type": "string",
+      "title": "File for any attachment"
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any additional comments added upon issuance"
+    },
+    "related_credential_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "IDs of any related credentials that support the experience"
+    }
+  },
+  "required": [
+    "id",
+    "experience_type_id",
+    "experience_name",
+    "experience_org_id",
+    "experience_org_name",
+    "experience_category_id",
+    "experience_category",
+    "experience_date",
+    "experience_start_date",
+    "experience_end_date",
+    "image"
+  ],
+  "additionalProperties": false
+}

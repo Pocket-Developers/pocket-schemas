@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Organization.json",
+  "description": "Organization Credential",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the institution or organization"
+    },
+    "external_id": {
+      "type": "string",
+      "title": "External id of the institution or organization"
+    },
+    "organization_name": {
+      "type": "string",
+      "title": "Name of the institution or organization"
+    },
+    "abbreviation": {
+      "type": "string",
+      "title": "Official abbreviation for the institution, if any"
+    },
+    "organization_type_id": {
+      "type": "string",
+      "title": "id for the type of the organization"
+    },
+    "organization_type_name": {
+      "type": "string",
+      "title": "Name of the type of the organization"
+    },
+    "organization_subtype_id": {
+      "type": "string",
+      "title": "id for the subtype of the organization"
+    },
+    "organization_subtype_name": {
+      "type": "string",
+      "title": "Name of the subtype of the organization"
+    },
+    "logo": {
+      "type": "string",
+      "title": "Source image for the logo of the organization"
+    },
+    "background": {
+      "type": "string",
+      "title": "Background image for the app"
+    },
+    "reference_url": {
+      "type": "string",
+      "format": "uri",
+      "title": "URL for the organization website"
+    },
+    "street_1": {
+      "type": "string",
+      "title": "Address of the organization"
+    },
+    "street_2": {
+      "type": "string",
+      "title": "Address of the organization"
+    },
+    "country": {
+      "type": "string",
+      "title": "Country code of the organization"
+    },
+    "city": {
+      "type": "string",
+      "title": "City of the organization"
+    },
+    "region": {
+      "type": "string",
+      "title": "State or province of the organization"
+    },
+    "postal_code": {
+      "type": "string",
+      "title": "Zip or postal code of the organization"
+    }
+  },
+  "required": [
+    "id",
+    "organization_name",
+    "organization_type_id",
+    "organization_type_name",
+    "organization_subtype_id",
+    "organization_subtype_name",
+    "street_1",
+    "country",
+    "city",
+    "region",
+    "postal_code"
+  ],
+  "additionalProperties": false
+}

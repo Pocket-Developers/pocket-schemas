@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Skill.json",
+  "description": "Skill",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the skill credential"
+    },
+    "skill_type_id": {
+      "type": "string",
+      "title": "id of the skill type"
+    },
+    "skill_name": {
+      "type": "string",
+      "title": "Name of the skill type"
+    },
+    "skill_description": {
+      "type": "string",
+      "title": "Description of the skill type"
+    },
+    "skill_category_id": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Skill categories associated with the skill credential"
+    },
+    "skill_category_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Names of the skill categories associated with the skill credential"
+    },
+    "skill_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Keywords associated with the skill"
+    },
+    "conferring_credential_definition_id": {
+      "type": "string",
+      "title": "id of the linked credential definition"
+    },
+    "conferring_credential_definition_name": {
+      "type": "string",
+      "title": "Name of the linked credential definition"
+    },
+    "conferring_credential": {
+      "type": "string",
+      "title": "hash for credential that conferred this skill credential"
+    },
+    "conferring_identifier": {
+      "type": "string",
+      "title": "id that conferred this skill credential"
+    }
+  },
+  "required": [
+    "id",
+    "skill_type_id",
+    "skill_name",
+    "skill_description",
+    "skill_category_id",
+    "skill_category_names"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "conferring_credential"
+      ]
+    },
+    {
+      "required": [
+        "conferring_identifier"
+      ]
+    }
+  ],
+  "additionalProperties": false
+}
