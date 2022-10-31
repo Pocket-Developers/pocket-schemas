@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Job.json",
+  "description": "Job",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "job id"
+    },
+    "organization_id": {
+      "type": "string",
+      "title": "id of institution or organization that has this job "
+    },
+    "external_id": {
+      "type": "string",
+      "title": "External id or code for job"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name of the job"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of the job, if any"
+    },
+    "occupation_id": {
+      "type": "string",
+      "title": "id of occupation associated with this job, if any"
+    }
+  },
+    "required": [
+    "id",
+    "organization_id",
+    "name"
+    ],
+  "additionalProperties": false
+}

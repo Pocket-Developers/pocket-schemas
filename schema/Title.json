@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Title.json",
+  "description": "Title",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "title id"
+    },
+    "organization_id": {
+      "type": "string",
+      "title": "id of institution or organization that has this job "
+    },
+    "external_id": {
+      "type": "string",
+      "title": "External id or code for title"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name of the title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of the title, if any"
+    },
+    "job_id": {
+      "type": "string",
+      "title": "uuid of the job linked to the title"
+    }
+  },
+    "required": [
+    "id",
+    "organization_id",
+    "name",
+    "job_id"
+    ],
+  "additionalProperties": false
+}
