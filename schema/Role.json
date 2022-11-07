@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Role.json",
+  "description": "Role",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential id"
+    },
+    "role_definition": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/RoleDefinition.json"
+    },
+   "privileges": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.getpocket.io/schema/Privilege.json"
+      }
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date position was acquired"
+    },
+    "expiration_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date position was acquired"
+    }
+  },
+  "required": [
+    "id",
+    "role_definition",
+    "start_date"
+    ],
+  "additionalProperties": false
+}

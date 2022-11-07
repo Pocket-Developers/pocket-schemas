@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/PriorPosition.json",
+  "description": "Prior Position",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential id"
+    },
+    "position_id": {
+      "type": "string",
+      "title": "id of position record which defines job and title"
+    },
+    "job": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/Job.json"
+    },
+    "title": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/Title.json"
+    }
+  },
+  "required": [
+    "id",
+    "position_id",
+    "job"
+  ],
+  "additionalProperties": false
+}

@@ -38,4 +38,10 @@ This repository contains Pocket's JSON-LD schemas. Below is a partial index of t
 * [Position](./schema/Position.json)
 * [Job](./schema/Job.json)
 * [Title](./schema/Title.json)
-
+* [Program](./schema/Program.json)
+* [Programs](./schema/Programs.json)
+* [PriorExperience](./schema/PriorExperience.json)
+* [Departure](./schema/Departure.json)
+* [PriorPosition](./schema/PriorPosition.json)
+* [PriorProgram](./schema/PriorProgram.json)
+* [Role](./schema/Role.json)

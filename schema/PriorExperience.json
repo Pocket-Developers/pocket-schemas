@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/PriorExperience.json",
+  "description": "Prior Experience",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential id"
+    },
+    "prior_position": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/PriorPosition.json"
+    },
+    "prior_program": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/PriorProgram.json"
+    },
+    "departure": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/Departure.json"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date position was acquired"
+    },
+    "related_role": {
+      "type": "string",
+      "title": "id of role credential related to the prior exp"
+    },
+    "revoked_credential": {
+      "type": "string",
+      "title": "Link to the former position or programs credential"
+    },
+  },
+  "required": [
+    "id",
+    "end_date",
+    "related_role",
+    "revoked_credential"
+    ],
+  "additionalProperties": false
+}
