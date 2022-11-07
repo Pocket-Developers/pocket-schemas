@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Departure.json",
+  "description": "Departure Reason",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of departure reason"
+    },
+    "organization_id": {
+      "type": "string",
+      "title": "id of organization indicating departure reason"
+    },
+    "external_id": {
+      "type": "string",
+      "title": "identifier within the organization, if any"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name for departure"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of departure, if any"
+    },
+    "comments": {
+      "type": "string",
+      "title": "Comments on departure, if any"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "ids of any asset credentials for any attachments, if any"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "organization_id",
+    "name"
+    ],
+  "additionalProperties": false
+}

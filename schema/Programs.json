@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Programs.json",
+  "description": "Programs",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential id"
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.getpocket.io/schema/Program.json"
+      }
+    },
+    "related_role": {
+      "type": "string",
+      "title": "uuid of role credential related to these programs"
+    }
+  },
+    "required": [
+    "id",
+    "programs",
+    "related_role"
+    ],
+  "additionalProperties": false
+}

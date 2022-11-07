@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Program.json",
+  "description": "Program",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Program id"
+    },
+    "name": {
+      "type": "string",
+      "title": "Organization name for program"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of the program"
+    },
+    "abbreviation": {
+      "type": "string",
+      "title": "Abbreviation of program, if any"
+    },
+    "orgqanization_id": {
+      "type": "string",
+      "title": "Organization offering the program, if any"
+    },
+    "external_id": {
+      "type": "string",
+      "title": "Organization's id of program, if any"
+    },
+    "program_type_id": {
+      "type": "string",
+      "title": "id of program type"
+    },
+    "program_map_id": {
+      "type": "string",
+      "title": "id of course map for program completion, if any"
+    },
+    "completion_definition_id": {
+      "type": "string",
+      "title": "Completion credential definition the program offers, if any"
+    },
+    "reference_uri": {
+      "type": "string",
+      "title": "uri of the program's web page, if any"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date program was started"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "program_type_id",
+    "start_date",
+  ],
+  "additionalProperties": false
+}
