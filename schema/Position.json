@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Position.json",
+  "description": "Position",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Credential id"
+    },
+    "position_id": {
+      "type": "string",
+      "title": "id of position record which defines job and title"
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.getpocket.io/schema/Job.json"
+      }
+    },
+    "titles": {
+      "type": "array",
+      "items": {
+        "$ref": "https://schemas.getpocket.io/schema/Title.json"
+      }
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date position was acquired"
+    },
+    "related_role": {
+      "type": "string",
+      "title": "uuid of role credential related to this position"
+    }
+  },
+    "required": [
+    "id",
+    "position_id",
+    "jobs",
+    "start_date",
+    "related_role"
+    ],
+  "additionalProperties": false
+}
