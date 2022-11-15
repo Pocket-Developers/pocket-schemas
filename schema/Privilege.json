@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Privilege.json",
+  "description": "Privilege",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of privilege"
+    },
+    "organization_id": {
+      "type": "string",
+      "title": "id of institution or organization granting the privilege"
+    },
+     "name": {
+      "type": "string",
+      "title": "Name of privilege"
+    },
+     "description": {
+      "type": "string",
+      "title": "Description of privilege"
+    },
+    "privilege_details": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/PrivilegeDetails.json"
+    },
+    "activation_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date privilege is active"
+    },
+    "expiration_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date privilege expires"
+    }
+  },
+  "required": [
+    "id",
+    "organization_id",
+    "name",
+    "privilege_details",
+    "activation_date"
+    ],
+  "additionalProperties": false
+}

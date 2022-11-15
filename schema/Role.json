@@ -21,12 +21,12 @@
     "start_date": {
       "type": "string",
       "format": "date",
-      "title": "Date position was acquired"
+      "title": "Date role acquired"
     },
     "expiration_date": {
       "type": "string",
       "format": "date",
-      "title": "Date position was acquired"
+      "title": "Date role expires, if there is an expiration date"
     }
   },
   "required": [

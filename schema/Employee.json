@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Employee.json",
+  "description": "Employee",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of Employee credential"
+    },
+    "name": {
+      "type": "string",
+      "title": "Full name of the employee"
+    },
+    "description": {
+      "type": "string",
+      "title": "Staff or employee of an organization or institution. Paid interns and apprentices are employees with a title of Intern or Apprentice."
+    },
+    "acceptance_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date of acceptance"
+    },
+    "agreements": {
+      "type": "array",
+      "title": "ids of any asset credentials for any agreement documents, if any",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assets": {
+      "type": "array",
+      "title": "ids of any asset credentials for any attachments, if any",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any additional comments added upon Affiliate"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "acceptance_date"
+  ],
+  "additionalProperties": false
+}
