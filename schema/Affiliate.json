@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Affiliate.json",
+  "description": "Affiliate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of Affiliate"
+    },
+    "name": {
+      "type": "string",
+      "title": "name of Affiliate"
+    },
+    "description": {
+      "type": "string",
+      "title": "description of Affiliate"
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any additional comments added upon Affiliate"
+    },
+    "required": [
+      "id",
+      "name",
+      "description"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Applicant.json",
+  "description": "Applicant",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the experience credential"
+    },
+    "name": {
+      "type": "string",
+      "title": "name of Applicant"
+    },
+    "description": {
+      "type": "string",
+      "title": "description of Applicant"
+    },
+    "application_date": {
+      "type": "string",
+      "format": "date",
+      "title": "date of application"
+    },
+    "application_id": {
+      "type": "string",
+      "title": "id of the application"
+    },
+    "application_external_id": {
+      "type": "string",
+      "title": "id of the application in external system"
+    },
+    "assets": {
+      "type": "array",
+      "title": "ids of any asset credentials for any attachments, if any",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any additional comments added upon Applicant"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "application_date"
+  ],
+  "additionalProperties": false
+}
