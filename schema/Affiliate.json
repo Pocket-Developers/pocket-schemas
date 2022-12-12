@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Affiliate.json",
+  "description": "Affiliate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the role status"
+    },
+    "name": {
+      "type": "string",
+      "title": "Often used for a retiree, board member, etc. e.g. a non-waged or paid but affiliated relationship."
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any text associated with specific affiliate status"
+    }
+  }
+}

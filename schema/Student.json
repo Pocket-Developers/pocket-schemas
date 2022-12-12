@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Student.json",
+  "description": "Student",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the role status"
+    },
+    "name": {
+      "type": "string",
+      "title": "An actively enrolled student in the institution."
+    },
+    "acceptance_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date accepted/enrolled as student"
+    },
+    "student_type_id": {
+      "type": "string",
+      "title": "id of the student type"
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any text associated with specific student status"
+    }
+  }
+}
