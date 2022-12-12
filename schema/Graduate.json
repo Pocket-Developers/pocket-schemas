@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/Graduate.json",
+  "description": "Graduate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "id of the role status"
+    },
+    "name": {
+      "type": "string",
+      "title": "A graduate or alumnus of an institution.."
+    },
+    "graduation_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date graduated"
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "title": "ids for the programs completed, if any"
+      }
+    },
+    "related_credentials": {
+      "type": "array",
+      "items": {
+        "title": "ids of related degree or certificate credential(s)"
+      }
+    },
+    "comments": {
+      "type": "string",
+      "title": "Any text associated with specific graduate status"
+    }
+  }
+}

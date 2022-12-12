@@ -6,43 +6,11 @@
   "properties": {
     "id": {
       "type": "string",
-      "title": "Program id"
+      "title": "Program ID"
     },
-    "name": {
+    "program_type": {
       "type": "string",
-      "title": "Organization name for program"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description of the program"
-    },
-    "abbreviation": {
-      "type": "string",
-      "title": "Abbreviation of program, if any"
-    },
-    "orgqanization_id": {
-      "type": "string",
-      "title": "Organization offering the program, if any"
-    },
-    "external_id": {
-      "type": "string",
-      "title": "Organization's id of program, if any"
-    },
-    "program_type_id": {
-      "type": "string",
-      "title": "id of program type"
-    },
-    "program_map_id": {
-      "type": "string",
-      "title": "id of course map for program completion, if any"
-    },
-    "completion_definition_id": {
-      "type": "string",
-      "title": "Completion credential definition the program offers, if any"
-    },
-    "reference_uri": {
-      "type": "string",
-      "title": "uri of the program's web page, if any"
+      "$ref": "https://schemas.getpocket.io/schema/ProgramType.json"
     },
     "start_date": {
       "type": "string",
@@ -52,9 +20,8 @@
   },
   "required": [
     "id",
-    "name",
-    "program_type_id",
-    "start_date",
+    "program_type",
+    "start_date"
   ],
   "additionalProperties": false
 }

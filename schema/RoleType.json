@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.getpocket.io/schema/RoleType.json",
+  "description": "Role Type",
+  "type": "object",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "title": "id of role type"
+    },
+    "organization_id": {
+      "type": "string",
+      "title": "id of institution or organization; this is typically the top level org"
+    },
+    "external_id": {
+      "type": "string",
+      "title": "External id or code for role, if any"
+    },
+    "status": {
+      "type": "object",
+      "$ref": "https://schemas.getpocket.io/schema/StatusType.json"
+    }
+  },
+  "required": [
+    "uuid",
+    "organization_id",
+    "status"
+    ],
+  "additionalProperties": false
+}
