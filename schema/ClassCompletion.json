@@ -1,58 +1,32 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://schemas.getpocket.io/schema/ClassCompletion.json",
-  "description": "ClassCompletion",
+  "description": "Class Completion",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "title": "id of credential"
+      "title": "Class Completion ID"
     },
-    "course": {
-      "$ref": "https://schemas.getpocket.io/schema/Course.json"
-    },
-    "class_id": {
+    "class": {
       "type": "string",
-      "title": "id of enrolled class"
+      "$ref": "https://schemas.getpocket.io/schema/Class.json"
+    },
+    "grade": {
+      "type": "string",
+      "$ref": "https://schemas.getpocket.io/schema/Grade.json"
     },
     "completion_date": {
       "type": "string",
       "format": "date",
-      "title": "completion date"
-    },
-    "term": {
-      "$ref": "https://schemas.getpocket.io/schema/Term.json"
-    },
-    "grade": {
-      "$ref": "https://schemas.getpocket.io/schema/Grade.json"
-    },
-    "credits": {
-      "type": "integer",
-      "title": "numeric value of issued credits"
-    },
-    "general_ed": {
-      "$ref": "https://schemas.getpocket.io/schema/GeneralEd.json"
-    },
-    "program_fulfill": {
-      "type": "boolean",
-      "title": "Whether or not class fulfilled a program requirement"
-    },
-    "conferred_skills": {
-      "type": "array",
-      "items": {
-        "$ref": "https://schemas.getpocket.io/schema/ConferredSkill.json"
-      }
+      "title": "Date class was completed"
     }
   },
   "required": [
     "id",
-    "course",
-    "class_id",
-    "completion_date",
-    "term",
+    "class",
     "grade",
-    "credits",
-    "program_fulfill"
+    "completion_date"
   ],
   "additionalProperties": false
 }
